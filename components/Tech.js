@@ -15,6 +15,7 @@ export default function Tech() {
       <style jsx>{`
         div {
           margin-top: 50px;
+          margin-bottom: 50px;
         }
         h2 {
           color: white;

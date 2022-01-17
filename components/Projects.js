@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Projects({ src, title, desc, badge,git,url }) {
+export default function Projects({ src, title, desc, badge, git, url }) {
   return (
     <div>
       <div className="item-grid">
@@ -8,9 +8,17 @@ export default function Projects({ src, title, desc, badge,git,url }) {
 
         <div className="text-box">
           <h3>{title}</h3>
-                  <h4>{desc}</h4>
-                  <h6><a href={git} target='_blank'>Github</a></h6>
-                  <h6><a href={url} target='_blank'>Live</a></h6>
+          <h4>{desc}</h4>
+          <h6>
+            <a href={git} target="_blank">
+              Github
+            </a>
+          </h6>
+          <h6>
+            <a href={url} target="_blank">
+              Live
+            </a>
+          </h6>
           <div className="badges">
             <p>FireBase</p>
             <p>React</p>
@@ -25,10 +33,15 @@ export default function Projects({ src, title, desc, badge,git,url }) {
         }
         h3 {
           margin-top: 0;
+          font-size:25px;
+        }
+        h4{
+            font-size: 13px;
         }
 
         .item-grid {
           margin-top: 50px;
+          margin-bottom: 70px;
           display: grid;
           color: white;
           grid-template-columns: 1fr 1fr;
@@ -40,7 +53,8 @@ export default function Projects({ src, title, desc, badge,git,url }) {
           justify-content: space-between;
         }
         p {
-          padding: 2px;
+          margin:0;
+          padding: 1px;
           list-style-type: none;
           font-size: 12px;
           color: #696767;
