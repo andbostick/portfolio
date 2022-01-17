@@ -22,7 +22,7 @@ export default function Tech() {
                 h2 {
                     color: white;
                     font-size: 20px; 
-                    margin-left: 25px;
+                    
                 }
 
                 ul{
