@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Projects({ src, title, desc, badge }) {
+export default function Projects({ src, title, desc, badge,git,url }) {
   return (
     <div>
       <div className="item-grid">
@@ -8,7 +8,9 @@ export default function Projects({ src, title, desc, badge }) {
 
         <div className="text-box">
           <h3>{title}</h3>
-          <h4>{desc}</h4>
+                  <h4>{desc}</h4>
+                  <h6><a href={git} target='_blank'>Github</a></h6>
+                  <h6><a href={url} target='_blank'>Live</a></h6>
           <div className="badges">
             <p>FireBase</p>
             <p>React</p>
