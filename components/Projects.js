@@ -33,10 +33,10 @@ export default function Projects({ src, title, desc, badge, git, url }) {
         }
         h3 {
           margin-top: 0;
-          font-size:25px;
+          font-size: 25px;
         }
-        h4{
-            font-size: 13px;
+        h4 {
+          font-size: 13px;
         }
 
         .item-grid {
@@ -53,7 +53,7 @@ export default function Projects({ src, title, desc, badge, git, url }) {
           justify-content: space-between;
         }
         p {
-          margin:0;
+          margin: 0;
           padding: 1px;
           list-style-type: none;
           font-size: 12px;

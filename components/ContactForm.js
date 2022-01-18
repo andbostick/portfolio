@@ -60,7 +60,7 @@ export default () => {
   };
   return (
     <main>
-      <h1>Contact Me</h1>
+      
 
       <form onSubmit={handleOnSubmit}>
         <label htmlFor="email">Email</label>
@@ -195,6 +195,11 @@ export default () => {
         @media screen and (max-width: 474px) {
           main {
             margin-right: 12px;
+          }
+        }
+        @media (min-width: 1024px) {
+          main {
+            margin: 0 25% 5rem 25%;
           }
         }
       `}</style>

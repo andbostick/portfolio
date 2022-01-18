@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { useMediaQuery } from "react-responsive";
 import todoist from "../images/todist.png";
 import nuclear from "../images/nuclear.png";
 
@@ -30,6 +31,7 @@ export default function Home() {
           url={'https://nuclearhangover.com'}
           git={'https://github.com/andbostick/next-nuclear'}
         />
+        <h2>Contact Me</h2>
         <ContactForm />
       </div>
       <style jsx>{`
@@ -41,6 +43,11 @@ export default function Home() {
         .content {
           margin-left: 15px;
           
+        }
+        @media (min-width: 1024px) {
+          .content {
+            margin: 0 15rem 0 15rem;
+          }
         }
       `}</style>
     </div>
