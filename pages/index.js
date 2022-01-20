@@ -46,7 +46,8 @@ export default function Home() {
         }
         @media (min-width: 1024px) {
           .content {
-            margin: 0 15rem 0 15rem;
+            width: 50%;
+            margin: 0 auto;
           }
         }
       `}</style>

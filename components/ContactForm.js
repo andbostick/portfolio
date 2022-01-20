@@ -199,7 +199,7 @@ export default () => {
         }
         @media (min-width: 1024px) {
           main {
-            margin: 0 25% 5rem 25%;
+            margin: 0 10% 5rem 10%;
           }
         }
       `}</style>

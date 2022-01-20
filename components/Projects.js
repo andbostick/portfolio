@@ -2,10 +2,11 @@ import Image from "next/image";
 
 export default function Projects({ src, title, desc, badge, git, url }) {
   return (
-    <div>
+    <div className="container">
       <div className="item-grid">
+        <div className="image">
         <Image src={src} layout="responsive" />
-
+        </div>
         <div className="text-box">
           <h3>{title}</h3>
           <h4>{desc}</h4>
@@ -28,6 +29,10 @@ export default function Projects({ src, title, desc, badge, git, url }) {
         </div>
       </div>
       <style jsx>{`
+        .image {
+          height: 100px;
+          width: 350px;
+        }
         .text-box {
           margin: 0 25px 0 15px;
         }
@@ -41,16 +46,18 @@ export default function Projects({ src, title, desc, badge, git, url }) {
 
         .item-grid {
           margin-top: 50px;
-          margin-bottom: 70px;
+          margin-bottom: 10px;
           display: grid;
           color: white;
           grid-template-columns: 1fr 1fr;
+          height: 350px;
         }
         .badges {
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: space-between;
+          margin: 0 75% 0 0;
         }
         p {
           margin: 0;
