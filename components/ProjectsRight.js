@@ -25,74 +25,69 @@ export default function ProjectsRight({ src, title, desc, badge, git, url }) {
           </div>
         </div>
         <div className="image">
-        <Image src={src} layout="responsive" />
+        <Image src={src} />
         </div>
       </div>
       <style jsx>{`
-      .image {
-        height: 320px;
-        width: 200px;
-      }
-      
-      .container {
+      .image{
+        margin: auto;
         
-        position: relative;
-        margin: 20px auto;
-        overflow: hidden;
-        width: 320px;
-        height: 300px;
-        background: white;
-        box-shadow: 5px 5px 15px rgba(black, 0.5);
-        border-radius: 10px;
       }
-      
-      .text-box {
-        padding: 20px;
-      }
-      h3 {
-        
-        font-size: 25px;
-      }
-      h4 {
-        font-size: 13px;
-      }
-
-      .item-grid {
-        display: flex;
-
-      }
-      .badges {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-      p {
-        
-        padding: 1px;
-        list-style-type: none;
-        font-size: 12px;
-        color: white;
-        background: #152f6e;
-        border-radius: 25%;
-      }
-      @media (min-width: 768px) {
-        .image {
-          height: 100px;
-          width: 350px;
+        .container {
+          position: relative;
+          margin: 10px auto;
+          overflow: hidden;
+          width: 320px;
+          height: 100%;
+          background: white;
+          box-shadow: 5px 5px 15px rgba(black, 0.5);
+          border-radius: 10px;
         }
-        .container{
-          width:550px;
-        }
-        .text-box{
+
+        .text-box {
+          padding: 20px;
           text-align: center;
         }
-      }
-      @media (min-width: 1280px) {
-        .container{
-          width:600px;
+        h3 {
+          font-size: 20px;
+          margin-top: 0;
         }
-      }
+        h4 {
+          font-size: 10px;
+        }
+        a:hover{
+          color: #152f6e;
+        }
+        .item-grid {
+          display: flex;
+        }
+        .badges {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        p {
+          padding: 2px;
+          list-style-type: none;
+          font-size: 12px;
+          color: white;
+          background: #152f6e;
+          border-radius: 25%;
+        }
+        @media (min-width: 768px) {
+          .container {
+            width: 550px;
+          }
+          .text-box {
+            text-align: center;
+          }
+        }
+        @media (min-width: 1280px) {
+          .container {
+            width: 600px;
+          }
+        }
       `}</style>
     </div>
   );

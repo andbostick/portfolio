@@ -12,14 +12,16 @@ export default function Projects({ src, title, desc, badge, git, url }) {
           <h4>{desc}</h4>
           <h6>
             <a href={git} target="_blank">
-              Github
-            </a>
-          </h6>
-          <h6>
+              Github  
+            </a> 
+            &nbsp;
             <a href={url} target="_blank">
-              Live
+                 Live
             </a>
           </h6>
+          
+            
+          
           <div className="badges">
             <p>FireBase</p>
             <p>React</p>
@@ -55,7 +57,9 @@ export default function Projects({ src, title, desc, badge, git, url }) {
         h4 {
           font-size: 10px;
         }
-
+        a:hover{
+          color: #152f6e;
+        }
         .item-grid {
           display: flex;
         }
