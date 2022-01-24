@@ -7,6 +7,12 @@ export default function Header() {
       <style jsx>{`
         div {
           text-align: center;
+          padding:30px;
+        }
+        @media(min-width:768px){
+          div{
+            padding:50px;
+          }
         }
         h2 {
           margin-top: 60px;
@@ -16,8 +22,8 @@ export default function Header() {
           font-weight: 500;
         }
         h1 {
-          margin-top: 0;
-          font-size: 35px;
+          margin-top: 10;
+          font-size: 30px;
           color: #696767;
         }
 

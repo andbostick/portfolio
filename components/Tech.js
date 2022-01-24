@@ -16,6 +16,7 @@ export default function Tech() {
         div {
           margin-top: 50px;
           margin-bottom: 50px;
+          padding: 20px 0 20px 0;
         }
         h2 {
           color: white;
@@ -31,6 +32,8 @@ export default function Tech() {
           font-size: 20px;
           gap: 15px;
         }
+
+        
       `}</style>
     </div>
   );

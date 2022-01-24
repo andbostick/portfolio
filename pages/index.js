@@ -5,9 +5,12 @@ import { useMediaQuery } from "react-responsive";
 import todoist from "../images/todist.png";
 import nuclear from "../images/nuclear.png";
 
+import Slide from 'react-reveal/Slide'
+
 import Header from "../components/Header";
 import Tech from "../components/Tech";
 import Projects from "../components/Projects";
+import ProjectsRight from "../components/ProjectsRight";
 import ContactForm from "../components/ContactForm";
 
 export default function Home() {
@@ -17,6 +20,7 @@ export default function Home() {
       <div className="content">
         <Tech />
         <h2>Portfolio</h2>
+        <Slide left>
         <Projects
           src={todoist}
           title={"ToDoist"}
@@ -24,13 +28,14 @@ export default function Home() {
           url={'https://peaceful-wozniak-a77c4c.netlify.app/'}
           git={'https://github.com/andbostick/todo-board'}
         />
-        <Projects
+        <ProjectsRight
           src={nuclear}
           title={"Nuclear Hangover"}
           desc={"Podcast host with merch store"}
           url={'https://nuclearhangover.com'}
           git={'https://github.com/andbostick/next-nuclear'}
-        />
+          />
+          </Slide>
         <h2>Contact Me</h2>
         <ContactForm />
       </div>
@@ -44,9 +49,15 @@ export default function Home() {
           margin-left: 15px;
           
         }
+        @media(min-width:768px){
+          .content{
+            width:70%;
+            margin: 0 auto;
+          }
+        }
         @media (min-width: 1024px) {
           .content {
-            width: 50%;
+            width: 60%;
             margin: 0 auto;
           }
         }

@@ -5,7 +5,7 @@ export default function Projects({ src, title, desc, badge, git, url }) {
     <div className="container">
       <div className="item-grid">
         <div className="image">
-        <Image src={src} layout="responsive" />
+          <Image src={src} layout="responsive" />
         </div>
         <div className="text-box">
           <h3>{title}</h3>
@@ -30,14 +30,26 @@ export default function Projects({ src, title, desc, badge, git, url }) {
       </div>
       <style jsx>{`
         .image {
-          height: 100px;
-          width: 350px;
+          height: 320px;
+          width: 200px;
         }
+        
+        .container {
+          position: relative;
+          margin: auto;
+          overflow: hidden;
+          width: 320px;
+          height: 300px;
+          background: white;
+          box-shadow: 5px 5px 15px rgba(black, 0.5);
+          border-radius: 10px;
+        }
+        
         .text-box {
-          margin: 0 25px 0 15px;
+          padding: 20px;
         }
         h3 {
-          margin-top: 0;
+          
           font-size: 25px;
         }
         h4 {
@@ -45,28 +57,40 @@ export default function Projects({ src, title, desc, badge, git, url }) {
         }
 
         .item-grid {
-          margin-top: 50px;
-          margin-bottom: 10px;
-          display: grid;
-          color: white;
-          grid-template-columns: 1fr 1fr;
-          height: 350px;
+          display: flex;
+
         }
         .badges {
           display: flex;
           flex-direction: row;
           flex-wrap: wrap;
           justify-content: space-between;
-          margin: 0 75% 0 0;
         }
         p {
-          margin: 0;
+          
           padding: 1px;
           list-style-type: none;
           font-size: 12px;
-          color: #696767;
+          color: white;
           background: #152f6e;
           border-radius: 25%;
+        }
+        @media (min-width: 768px) {
+          .image {
+            height: 100px;
+            width: 350px;
+          }
+          .container{
+            width:550px;
+          }
+          .text-box{
+            text-align: center;
+          }
+        }
+        @media (min-width: 1280px) {
+          .container{
+            width:600px;
+          }
         }
       `}</style>
     </div>
