@@ -28,6 +28,8 @@ export default function Home() {
       <div className="content">
         <Tech />
         <h2>Portfolio</h2>
+        <div className="projects-container">
+        
         <Slide left>
         <Projects
           src={todoistMobile}
@@ -46,10 +48,17 @@ export default function Home() {
           git={'https://github.com/andbostick/next-nuclear'}
           />
           </Slide>
+          </div>
         <h2>Contact Me</h2>
         <ContactForm />
       </div>
       <style jsx>{`
+        .projects-container{
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 40px;
+          margin-bottom: 50px;
+        }
         h2 {
           font-family: Lato;
           color: white;

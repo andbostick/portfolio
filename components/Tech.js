@@ -26,6 +26,8 @@ export default function Tech() {
         }
 
         ul {
+          text-align:center;
+          padding:30px;
           color: #696767;
           list-style-type: none;
           display: grid;

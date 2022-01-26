@@ -98,6 +98,7 @@ export default () => {
           font-size: 16px;
           line-height: 1.65;
           margin-bottom: 50px;
+          padding: 50px;
         }
         header {
           height: 152px;
@@ -199,7 +200,7 @@ export default () => {
         }
         @media (min-width: 1024px) {
           main {
-            margin: 0 10% 5rem 10%;
+            margin: auto;
           }
         }
       `}</style>

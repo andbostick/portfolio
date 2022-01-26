@@ -9,12 +9,11 @@ export default function ProjectsRight({ src, title, desc, badge, git, url }) {
           <h4>{desc}</h4>
           <h6>
             <a href={git} target="_blank">
-              Github
-            </a>
-          </h6>
-          <h6>
+              Github  
+            </a> 
+            &nbsp;
             <a href={url} target="_blank">
-              Live
+                 Live
             </a>
           </h6>
           <div className="badges">
@@ -35,7 +34,7 @@ export default function ProjectsRight({ src, title, desc, badge, git, url }) {
       }
         .container {
           position: relative;
-          margin: 10px auto;
+          margin:  auto;
           overflow: hidden;
           width: 320px;
           height: 100%;
