@@ -44,6 +44,7 @@ export default function Projects({ src, title, desc, badge, git, url }) {
           background: white;
           box-shadow: 5px 5px 15px rgba(black, 0.5);
           border-radius: 10px;
+          font-family:'Proza Libre';
         }
 
         .text-box {

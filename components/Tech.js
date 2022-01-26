@@ -21,6 +21,7 @@ export default function Tech() {
         h2 {
           color: white;
           font-size: 20px;
+          font-family: Lato;
           font-weight: 500;
         }
 
@@ -31,6 +32,7 @@ export default function Tech() {
           grid-template-columns: 1fr 1fr 1fr;
           font-size: 20px;
           gap: 15px;
+          font-family: Roboto;
         }
 
         

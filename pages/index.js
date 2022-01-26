@@ -17,6 +17,13 @@ import ContactForm from "../components/ContactForm";
 export default function Home() {
   return (
     <div>
+      <Head>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,300&display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;500&display=swap" rel="stylesheet"/>
+      </Head>
       <Header />
       <div className="content">
         <Tech />
@@ -44,6 +51,7 @@ export default function Home() {
       </div>
       <style jsx>{`
         h2 {
+          font-family: Lato;
           color: white;
           font-size: 20px;
           font-weight: 500;

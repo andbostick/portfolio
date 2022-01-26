@@ -1,6 +1,9 @@
+
+
 export default function Header() {
   return (
     <div>
+      
       <h2>Andrew Bostick</h2>
       <h1>Front-End Developer</h1>
       <button className="button">Get In Contact With Me</button>
@@ -8,22 +11,40 @@ export default function Header() {
         div {
           text-align: center;
           padding:30px;
+          font-family: Lato;
         }
         @media(min-width:768px){
           div{
             padding:50px;
+            
+          }
+          h2{
+            font-size: 40px;
+          }
+          h1{
+            font-size: 60px;
           }
         }
+        @media(min-width:1280px){
+          h2{
+            font-size: 40px;
+          }
+          h1{
+            font-size: 70px;
+          }
+        }
+
         h2 {
           margin-top: 60px;
           margin-bottom: 0;
-          font-size: 24px;
+          
           color: white;
           font-weight: 500;
         }
         h1 {
+          
           margin-top: 10;
-          font-size: 30px;
+          
           color: #696767;
         }
 
