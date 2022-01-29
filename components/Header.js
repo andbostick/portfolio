@@ -1,4 +1,4 @@
-
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Header() {
   return (
@@ -6,7 +6,9 @@ export default function Header() {
       
       <h2>Andrew Bostick</h2>
       <h1>Front-End Developer</h1>
+      <Link to='ContactForm'>
       <button className="button">Get In Contact With Me</button>
+      </Link>
       <style jsx>{`
         div {
           text-align: center;
