@@ -90,6 +90,10 @@ export default function Projects({ src, title, desc, badge, git, url }) {
           .container {
             width: 600px;
           }
+          .text-box {
+            padding: 40px;
+            
+          }
         }
       `}</style>
     </div>

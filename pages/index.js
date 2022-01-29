@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import { useMediaQuery } from "react-responsive";
 import todoist from "../images/todist.png";
 import todoistMobile from '../images/todistMobile.png'
-import nuclear from "../images/nuclear.png";
+import nuclear from "../images/nuclear1.png";
 
 import Slide from 'react-reveal/Slide'
 

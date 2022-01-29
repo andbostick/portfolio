@@ -17,7 +17,7 @@ export default function ProjectsRight({ src, title, desc, badge, git, url }) {
             </a>
           </h6>
           <div className="badges">
-            <p>FireBase</p>
+            
             <p>React</p>
             <p>Javascript</p>
             <p>CSS</p>
@@ -86,6 +86,10 @@ export default function ProjectsRight({ src, title, desc, badge, git, url }) {
         @media (min-width: 1280px) {
           .container {
             width: 600px;
+          }
+          .text-box {
+            padding: 40px;
+            
           }
         }
       `}</style>
