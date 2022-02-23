@@ -11,6 +11,7 @@ export default function Tech() {
         <li>HTML</li>
         <li>Figma</li>
         <li>Firebase</li>
+        <li>Sanity.io</li>
       </ul>
       <style jsx>{`
         div {

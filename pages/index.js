@@ -5,7 +5,6 @@ import { useMediaQuery } from "react-responsive";
 import todoistMobile from '../images/todistMobile.png'
 import nuclear from "../images/nuclear1.png";
 
-import Slide from 'react-reveal/Slide'
 
 import Header from "../components/Header";
 import Tech from "../components/Tech";
@@ -29,7 +28,7 @@ export default function Home() {
         <h2>Portfolio</h2>
         <div className="projects-container">
         
-        <Slide left>
+        
         <Projects
           src={todoistMobile}
           title={"ToDoist"}
@@ -37,8 +36,8 @@ export default function Home() {
           url={'https://peaceful-wozniak-a77c4c.netlify.app/'}
           git={'https://github.com/andbostick/todo-board'}
           />
-          </Slide>
-          <Slide right>
+          
+          
         <ProjectsRight
           src={nuclear}
           title={"Nuclear Hangover"}
@@ -46,7 +45,7 @@ export default function Home() {
           url={'https://nuclearhangover.com'}
           git={'https://github.com/andbostick/next-nuclear'}
           />
-          </Slide>
+          
           </div>
         <h2>Contact Me</h2>
         <ContactForm />
